@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USDT Sender</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>USDT Token Sender</h1>
+    <button onclick="connect()">🔗 Connect Wallet</button>
+    <p id="wallet">Not connected</p>
+    <p><strong>Your USDT Balance:</strong> <span id="balance">--</span></p>
+    <input type="text" id="to" placeholder="Recipient address">
+    <input type="number" id="amount" placeholder="Amount to send">
+    <button onclick="sendToken()">🚀 Send USDT</button>
+    <p id="status"></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
